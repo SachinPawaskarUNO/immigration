@@ -1,0 +1,37 @@
+Year,region_dest,region_orig,immigrants
+1990,Africa,Africa,12806011
+1990,Africa,Asia,1437269
+1990,Africa,Europe,626989
+1990,Africa,Latin America and the Caribbean,5475
+1990,Africa,North America,58155
+1990,Africa,Oceania,9041
+1990,Asia,Africa,1777311
+1990,Asia,Asia,39445119
+1990,Asia,Europe,7968491
+1990,Asia,Latin America and the Caribbean,24940
+1990,Asia,North America,254656
+1990,Asia,Oceania,45308
+1990,Europe,Africa,4229871
+1990,Europe,Asia,27445208
+1990,Europe,Europe,27002072
+1990,Europe,Latin America and the Caribbean,890958
+1990,Europe,North America,764437
+1990,Europe,Oceania,88659
+1990,Latin America and the Caribbean,Africa,19126
+1990,Latin America and the Caribbean,Asia,1198664
+1990,Latin America and the Caribbean,Europe,1824261
+1990,Latin America and the Caribbean,Latin America and the Caribbean,3432856
+1990,Latin America and the Caribbean,North America,605223
+1990,Latin America and the Caribbean,Oceania,3817
+1990,North America,Africa,500481
+1990,North America,Asia,8541447
+1990,North America,Europe,6614618
+1990,North America,Latin America and the Caribbean,9718685
+1990,North America,North America,999557
+1990,North America,Oceania,133005
+1990,Oceania,Africa,160038
+1990,Oceania,Asia,2646734
+1990,Oceania,Europe,2604203
+1990,Oceania,Latin America and the Caribbean,65227
+1990,Oceania,North America,132617
+1990,Oceania,Oceania,531836
