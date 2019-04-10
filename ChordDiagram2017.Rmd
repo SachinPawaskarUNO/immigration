@@ -1,0 +1,72 @@
+---
+title: "testing for project"
+author: "Brandy Bergmann"
+date: "March 25, 2019"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+options(repos='http://cran.rstudio.com/')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+remove(list = ls(all.names = TRUE))
+detachAllPackages <- function() {
+  basic.packages.blank <- c(
+    "stats",
+    "graphics",
+    "grDevices",
+    "utils",
+    "datasets",
+    "methods",
+    "base"
+  )
+  basic.packages <- paste("package:", basic.packages.blank, sep = "")
+  package.list <- search()[ifelse(unlist(gregexpr("package:", search())) == 1, TRUE, FALSE)]
+  package.list <- setdiff(package.list, basic.packages)
+  if (length(package.list) > 0) {
+    for (package in package.list) {
+      detach(package, character.only = TRUE)
+    }
+  }
+}
+detachAllPackages()
+if (!require(pacman)) {
+  install.packages("pacman")
+  require(pacman)
+}
+
+p_load(tidyverse, janitor, icd, tidymodels, parsnip, igraph,tidygraph,circlize,chorddiag)
+```
+
+
+```{r}
+mig_data2017 <- read.csv("TransposedRegion_2017.csv")
+mig_data2017$region_orig <- as.factor(mig_data2017$region_orig)
+mig_data2017$region_dest <- as.factor(mig_data2017$region_dest)
+mig_data2017<-mig_data2017 %>% select(region_orig, region_dest,Immigrants )
+mig_data2017$Immigrants <- as.numeric(mig_data2017$Immigrants)
+```
+
+```{r}
+
+## Regional Cord
+mig_data_reg2017<-mig_data2017 
+mig_data_reg2017 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg2017), attr ="Immigrants"))
+chord2017<-chorddiag(data = mig_data_reg2017,
+                      groupnamePadding = 30,
+                      groupPadding = 3,
+                      groupColors = c("#ffffe5","#fff7bc","#fee391","#fec44f","#fe9929","#ec7014","#cc4c02","#8c2d04"),
+                      groupnameFontsize = 9 ,
+                      showTicks = FALSE,
+                      margin=100,
+                      tooltipGroupConnector = "    &#x25B6;    ",
+                      chordedgeColor = "#B3B6B7"
+                      
+                      )
+
+chord2017 
+```
+
+```{r}
