@@ -1,8 +1,10 @@
 ---
-title: "Untitled"
-author: "Brandy Bergmann"
-date: "April 8, 2019"
-output: html_document
+title: "ChordDiagram 2000"
+date: "April 10, 2019"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -49,7 +51,7 @@ mig_data2000$Immigrants <- as.numeric(mig_data2000$Immigrants)
 ```{r}
 
 ## Regional Cord
-mig_data_reg2000<-mig_data2000 
+mig_data_reg2000<-mig_data2000
 mig_data_reg2000 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg2000), attr ="Immigrants"))
 chord2000<-chorddiag(data = mig_data_reg2000,
                       groupnamePadding = 30,
@@ -63,4 +65,7 @@ chord2000<-chorddiag(data = mig_data_reg2000,
                       
                       )
 
-chord2000 
+chord2000
+```
+
+```{r}

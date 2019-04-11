@@ -1,6 +1,5 @@
 ---
-title: "testing for project"
-author: "Brandy Bergmann"
+title: "ChordDiagram 2017"
 date: "March 25, 2019"
 output:
   html_document:

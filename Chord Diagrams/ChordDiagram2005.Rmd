@@ -1,5 +1,5 @@
 ---
-title: "ChordDiagram 1995"
+title: "ChordDiagram 2005"
 date: "April 10, 2019"
 output:
   html_document:
@@ -41,19 +41,19 @@ p_load(tidyverse, janitor, icd, tidymodels, parsnip, igraph,tidygraph,circlize,c
 
 
 ```{r}
-mig_data1995 <- read.csv("TransposedRegion_1995.csv")
-mig_data1995$region_orig <- as.factor(mig_data1995$region_orig)
-mig_data1995$region_dest <- as.factor(mig_data1995$region_dest)
-mig_data1995<-mig_data1995 %>% select(region_orig, region_dest,Immigrants )
-mig_data1995$Immigrants <- as.numeric(mig_data1995$Immigrants)
+mig_data2005 <- read.csv("TransposedRegion_2005.csv")
+mig_data2005$region_orig <- as.factor(mig_data2005$region_orig)
+mig_data2005$region_dest <- as.factor(mig_data2005$region_dest)
+mig_data2005<-mig_data2005 %>% select(region_orig, region_dest,Immigrants )
+mig_data2005$Immigrants <- as.numeric(mig_data2005$Immigrants)
 ```
 
 ```{r}
 
 ## Regional Cord
-mig_data_reg1995<-mig_data1995
-mig_data_reg1995 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg1995), attr ="Immigrants"))
-chord1995<-chorddiag(data = mig_data_reg1995,
+mig_data_reg2005<-mig_data2005
+mig_data_reg2005 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg2005), attr ="Immigrants"))
+chord2005<-chorddiag(data = mig_data_reg2005,
                       groupnamePadding = 30,
                       groupPadding = 3,
                       groupColors = c("#ffffe5","#fff7bc","#fee391","#fec44f","#fe9929","#ec7014","#cc4c02","#8c2d04"),
@@ -65,7 +65,7 @@ chord1995<-chorddiag(data = mig_data_reg1995,
                       
                       )
 
-chord1995
+chord2005
 ```
 
 ```{r}

@@ -1,50 +1,58 @@
 ---
-title: "ChordDiagram1990"
-author: "Brandy Bergmann"
-date: "April 7, 2019"
-output: html_document
+title: "ChordDiagram 1990"
+date: "April 10, 2019"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+options(repos='http://cran.rstudio.com/')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+remove(list = ls(all.names = TRUE))
+detachAllPackages <- function() {
+  basic.packages.blank <- c(
+    "stats",
+    "graphics",
+    "grDevices",
+    "utils",
+    "datasets",
+    "methods",
+    "base"
+  )
+  basic.packages <- paste("package:", basic.packages.blank, sep = "")
+  package.list <- search()[ifelse(unlist(gregexpr("package:", search())) == 1, TRUE, FALSE)]
+  package.list <- setdiff(package.list, basic.packages)
+  if (length(package.list) > 0) {
+    for (package in package.list) {
+      detach(package, character.only = TRUE)
+    }
+  }
+}
+detachAllPackages()
+if (!require(pacman)) {
+  install.packages("pacman")
+  require(pacman)
+}
+
+p_load(tidyverse, janitor, icd, tidymodels, parsnip, igraph,tidygraph,circlize,chorddiag)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-#install.packages("tidyverse")
-#install.packages("tidygraph")
-#install.packages("circlize")
-library(tidyverse)
-library(igraph)
-library(tidygraph)
-library(circlize)
-library(chorddiag)
-```
 
 ```{r}
 mig_data1990 <- read.csv("TransposedRegion_1990.csv")
 mig_data1990$region_orig <- as.factor(mig_data1990$region_orig)
 mig_data1990$region_dest <- as.factor(mig_data1990$region_dest)
-#mig_data1990$immigrants <- as.factor(mig_data1990$immigrants)
-```
-
-```{r}
-mig_data1990<-mig_data1990 %>% select( region_orig, region_dest,immigrants )
+mig_data1990<-mig_data1990 %>% select(region_orig, region_dest,Immigrants )
+mig_data1990$Immigrants <- as.numeric(mig_data1990$Immigrants)
 ```
 
 ```{r}
 
 ## Regional Cord
-mig_data_reg1990 <- mig_data1990 %>% select(region_orig,region_dest,immigrants)
-```
-
-```{r}
-mig_data_reg1990 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg1990),attr="immigrants"))
+mig_data_reg1990<-mig_data1990
+mig_data_reg1990 <-as.matrix(as_adjacency_matrix(as_tbl_graph(mig_data_reg1990), attr ="Immigrants"))
 chord1990<-chorddiag(data = mig_data_reg1990,
                       groupnamePadding = 30,
                       groupPadding = 3,
@@ -54,7 +62,10 @@ chord1990<-chorddiag(data = mig_data_reg1990,
                       margin=100,
                       tooltipGroupConnector = "    &#x25B6;    ",
                       chordedgeColor = "#B3B6B7"
+                      
                       )
 
 chord1990
 ```
+
+```{r}
