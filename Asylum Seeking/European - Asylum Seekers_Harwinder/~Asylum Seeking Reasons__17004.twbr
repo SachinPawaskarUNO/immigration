@@ -1,0 +1,1305 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0213.2333                               -->
+<workbook source-build='2019.1.0 (20191.19.0213.2333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='modern' />
+  <style>
+    <style-rule element='all'>
+      <format attr='font-family' value='Cambria' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Sheet3 (Final immigration EU)' inline='true' name='federated.0j64svy1lnbo2z1aclvpn0393czm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Final immigration EU' name='excel-direct.09m50hq1tei0af17ybo1s0t1bq7y'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/harwi/Documents/UNO Classes/Sem 4/Data Visualization/Immigration Proj/European - Asylum Seekers/Final immigration EU.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.09m50hq1tei0af17ybo1s0t1bq7y' name='Sheet3' table='[Sheet3$]' type='table'>
+          <columns gridOrigin='A1:R33:no:A1:R33:1' lost='0' outcome='1' processed='480'>
+            <column datatype='string' name='Countries Moving To' ordinal='0' />
+            <column datatype='real' name='Asylum Seekers Taken-2017' ordinal='1' />
+            <column datatype='real' name='Asylum Seekers Taken-2018' ordinal='2' />
+            <column datatype='real' name='0–13' ordinal='3' />
+            <column datatype='real' name='14–17' ordinal='4' />
+            <column datatype='real' name='18–34' ordinal='5' />
+            <column datatype='real' name='35–64' ordinal='6' />
+            <column datatype='real' name='65 and over' ordinal='7' />
+            <column datatype='real' name='Age unknown' ordinal='8' />
+            <column datatype='real' name='First instance decisions' ordinal='9' />
+            <column datatype='real' name='Refugee status' ordinal='10' />
+            <column datatype='real' name='Subsidiary protection' ordinal='11' />
+            <column datatype='real' name='Humanitarian reasons' ordinal='12' />
+            <column datatype='real' name='Rejected' ordinal='13' />
+            <column datatype='string' name='Countries#' ordinal='14' />
+            <column datatype='string' name='Country Code' ordinal='15' />
+            <column datatype='real' name='Latitute' ordinal='16' />
+            <column datatype='real' name='Longitude' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Countries Moving To</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Countries Moving To]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Countries Moving To</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asylum Seekers Taken-2017</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asylum Seekers Taken-2017]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Asylum Seekers Taken-2017</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asylum Seekers Taken-2018</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asylum Seekers Taken-2018]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Asylum Seekers Taken-2018</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0–13</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[0–13]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>0–13</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>14–17</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[14–17]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>14–17</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>18–34</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[18–34]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>18–34</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>35–64</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[35–64]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>35–64</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>65 and over</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[65 and over]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>65 and over</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age unknown</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age unknown]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Age unknown</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First instance decisions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[First instance decisions]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>First instance decisions</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Refugee status</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Refugee status]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Refugee status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subsidiary protection</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subsidiary protection]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Subsidiary protection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humanitarian reasons</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Humanitarian reasons]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Humanitarian reasons</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rejected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rejected]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Rejected</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Countries#</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Countries#]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Countries#</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitute</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitute]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Latitute</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R33:no:A1:R33:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>480</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[0–13]' role='measure' type='quantitative' />
+      <column datatype='real' name='[14–17]' role='measure' type='quantitative' />
+      <column datatype='real' name='[18–34]' role='measure' type='quantitative' />
+      <column datatype='real' name='[35–64]' role='measure' type='quantitative' />
+      <column caption='65 And Over' datatype='real' name='[65 and over]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Age unknown]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Asylum Seekers Taken-2017]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Asylum Seekers Taken-2018]' role='measure' type='quantitative' />
+      <column caption='Countries Moving To1' datatype='string' name='[Countries Moving To]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Countries#]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' name='[First instance decisions]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Humanitarian reasons]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Latitute]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[Refugee status]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Rejected]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Subsidiary protection]' role='measure' type='quantitative' />
+      <column-instance column='[Countries Moving To]' derivation='None' name='[none:Countries Moving To:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Latitute]' derivation='None' name='[none:Latitute:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Asylum Seekers Taken-2017]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2017:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Asylum Seekers Taken-2018]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2018:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Humanitarian reasons]' derivation='Sum' name='[pcto:sum:Humanitarian reasons:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Refugee status]' derivation='Sum' name='[pcto:sum:Refugee status:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Subsidiary protection]' derivation='Sum' name='[pcto:sum:Subsidiary protection:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[0–13]' derivation='Sum' name='[sum:0–13:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[14–17]' derivation='Sum' name='[sum:14–17:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[18–34]' derivation='Sum' name='[sum:18–34:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[35–64]' derivation='Sum' name='[sum:35–64:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[65 and over]' derivation='Sum' name='[sum:65 and over:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age unknown]' derivation='Sum' name='[sum:Age unknown:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Asylum Seekers Taken-2017]' derivation='Sum' name='[sum:Asylum Seekers Taken-2017:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Asylum Seekers Taken-2018]' derivation='Sum' name='[sum:Asylum Seekers Taken-2018:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[First instance decisions]' derivation='Sum' name='[sum:First instance decisions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Humanitarian reasons]' derivation='Sum' name='[sum:Humanitarian reasons:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Refugee status]' derivation='Sum' name='[sum:Refugee status:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Rejected]' derivation='Sum' name='[sum:Rejected:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subsidiary protection]' derivation='Sum' name='[sum:Subsidiary protection:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Countries Moving To1)' hidden='true' name='[Action (Countries Moving To1)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Countries Moving To]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Countries#,Latitute,Longitude)' hidden='true' name='[Action (Countries#,Latitute,Longitude)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Countries#]' />
+          <groupfilter function='level-members' level='[none:Latitute:ok]' />
+          <groupfilter function='level-members' level='[none:Longitude:ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.39542' measure-ordering='alphabetic' measure-percentage='0.60458' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:First instance decisions:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Refugee status:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:18–34:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:14–17:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Age unknown:qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Subsidiary protection:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:65 and over:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Asylum Seekers Taken-2017:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Rejected:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:0–13:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:35–64:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Asylum Seekers Taken-2018:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Humanitarian reasons:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 2' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Percenatge Change in Asylum Seekers Moevement into European Uinion State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet3 (Final immigration EU)' name='federated.0j64svy1lnbo2z1aclvpn0393czm' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0j64svy1lnbo2z1aclvpn0393czm'>
+            <column datatype='real' name='[Asylum Seekers Taken-2017]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Asylum Seekers Taken-2018]' role='measure' type='quantitative' />
+            <column caption='Countries Moving To1' datatype='string' name='[Countries Moving To]' role='dimension' type='nominal' />
+            <column-instance column='[Countries Moving To]' derivation='None' name='[none:Countries Moving To:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Asylum Seekers Taken-2017]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2017:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Asylum Seekers Taken-2017]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2017:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Asylum Seekers Taken-2018]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2018:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Asylum Seekers Taken-2018]' derivation='Sum' name='[pcto:sum:Asylum Seekers Taken-2018:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]'>
+            <groupfilter from='&quot;Austria&quot;' function='range' level='[none:Countries Moving To:nk]' to='&quot;United Kingdom&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Germany&quot;</bucket>
+              <bucket>&quot;France&quot;</bucket>
+              <bucket>&quot;Greece&quot;</bucket>
+              <bucket>&quot;Spain&quot;</bucket>
+              <bucket>&quot;Italy&quot;</bucket>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+              <bucket>&quot;Netherlands&quot;</bucket>
+              <bucket>&quot;Belgium&quot;</bucket>
+              <bucket>&quot;Sweden&quot;</bucket>
+              <bucket>&quot;Switzerland&quot;</bucket>
+              <bucket>&quot;Austria&quot;</bucket>
+              <bucket>&quot;Cyprus&quot;</bucket>
+              <bucket>&quot;Ireland&quot;</bucket>
+              <bucket>&quot;Denmark&quot;</bucket>
+              <bucket>&quot;Finland&quot;</bucket>
+              <bucket>&quot;Slovenia&quot;</bucket>
+              <bucket>&quot;Norway&quot;</bucket>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+              <bucket>&quot;Poland&quot;</bucket>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+              <bucket>&quot;Malta&quot;</bucket>
+              <bucket>&quot;Romania&quot;</bucket>
+              <bucket>&quot;Czechia&quot;</bucket>
+              <bucket>&quot;Portugal&quot;</bucket>
+              <bucket>&quot;Iceland&quot;</bucket>
+              <bucket>&quot;Croatia&quot;</bucket>
+              <bucket>&quot;Hungary&quot;</bucket>
+              <bucket>&quot;Lithuania&quot;</bucket>
+              <bucket>&quot;Latvia&quot;</bucket>
+              <bucket>&quot;Slovakia&quot;</bucket>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+              <bucket>&quot;Estonia&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='true' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='true' />
+            <format attr='enabled' id='light_adm0_lbl' value='true' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='true' />
+            <format attr='enabled' id='light_pp2_statelabels' value='true' />
+            <format attr='enabled' id='pp2_adminlabels' value='true' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='true' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='tableau-light-gray' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2017 along Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2018 along Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2017 along Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2018 along Countries Moving To:&#9;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2017 along Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Asylum Seekers Taken-2018 along Countries Moving To:&#9;</run>
+                <run bold='true'>&lt;[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]</rows>
+        <cols>([federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk:1] + [federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk:1])</cols>
+      </table>
+      <simple-id uuid='{8DB13603-9D4C-42EB-9FA3-A6FF5D663434}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet3 (Final immigration EU)' name='federated.0j64svy1lnbo2z1aclvpn0393czm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j64svy1lnbo2z1aclvpn0393czm'>
+            <column datatype='real' name='[0–13]' role='measure' type='quantitative' />
+            <column datatype='real' name='[14–17]' role='measure' type='quantitative' />
+            <column datatype='real' name='[18–34]' role='measure' type='quantitative' />
+            <column datatype='real' name='[35–64]' role='measure' type='quantitative' />
+            <column caption='65 And Over' datatype='real' name='[65 and over]' role='measure' type='quantitative' />
+            <column caption='Countries Moving To1' datatype='string' name='[Countries Moving To]' role='dimension' type='nominal' />
+            <column-instance column='[Countries Moving To]' derivation='None' name='[none:Countries Moving To:nk]' pivot='key' type='nominal' />
+            <column-instance column='[0–13]' derivation='Sum' name='[sum:0–13:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[14–17]' derivation='Sum' name='[sum:14–17:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[18–34]' derivation='Sum' name='[sum:18–34:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[35–64]' derivation='Sum' name='[sum:35–64:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[65 and over]' derivation='Sum' name='[sum:65 and over:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:18–34:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:0–13:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:35–64:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:14–17:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:65 and over:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:65 and over:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:14–17:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:35–64:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:0–13:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:18–34:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk] / [federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names])</rows>
+        <cols>[federated.0j64svy1lnbo2z1aclvpn0393czm].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{A58A29F8-896F-4A72-AE90-83203B9D8411}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Asylum/Refuge Status Update in EU</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet3 (Final immigration EU)' name='federated.0j64svy1lnbo2z1aclvpn0393czm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j64svy1lnbo2z1aclvpn0393czm'>
+            <column caption='Countries Moving To1' datatype='string' name='[Countries Moving To]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Humanitarian reasons]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Refugee status]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rejected]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Subsidiary protection]' role='measure' type='quantitative' />
+            <column-instance column='[Countries Moving To]' derivation='None' name='[none:Countries Moving To:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Humanitarian reasons]' derivation='Sum' name='[pcto:sum:Humanitarian reasons:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Refugee status]' derivation='Sum' name='[pcto:sum:Refugee status:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Rejected]' derivation='Sum' name='[pcto:sum:Rejected:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Subsidiary protection]' derivation='Sum' name='[pcto:sum:Subsidiary protection:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Refugee status]' derivation='Sum' name='[sum:Refugee status:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Subsidiary protection]' derivation='Sum' name='[sum:Subsidiary protection:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]'>
+            <groupfilter from='&quot;Austria&quot;' function='range' level='[none:Countries Moving To:nk]' to='&quot;United Kingdom&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' direction='DESC' using='[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Subsidiary protection:qk]' />
+          <slices>
+            <column>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' palette='green_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' value='Highlight Countries Moving To&#10;'>
+              <formatted-text>
+                <run>Highlight Countries Moving To&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Refugee status:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Subsidiary protection:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' />
+              <text column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]</rows>
+        <cols>([federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk] + ([federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Refugee status:qk] + ([federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Subsidiary protection:qk] + [federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk])))</cols>
+      </table>
+      <simple-id uuid='{0A1D4109-8DD8-436A-9DA2-21D5C2A3D440}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Asylum Seekering in EU 28</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet3 (Final immigration EU)' name='federated.0j64svy1lnbo2z1aclvpn0393czm' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0j64svy1lnbo2z1aclvpn0393czm'>
+            <column caption='Countries Moving To1' datatype='string' name='[Countries Moving To]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Countries#]' role='dimension' type='nominal' />
+            <column datatype='real' name='[First instance decisions]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Humanitarian reasons]' role='measure' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Latitute]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='real' name='[Refugee status]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rejected]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Subsidiary protection]' role='measure' type='quantitative' />
+            <column-instance column='[Countries#]' derivation='None' name='[none:Countries#:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Latitute]' derivation='None' name='[none:Latitute:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First instance decisions]' derivation='Sum' name='[sum:First instance decisions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Humanitarian reasons]' derivation='Sum' name='[sum:Humanitarian reasons:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Refugee status]' derivation='Sum' name='[sum:Refugee status:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rejected]' derivation='Sum' name='[sum:Rejected:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Subsidiary protection]' derivation='Sum' name='[sum:Subsidiary protection:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:First instance decisions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Humanitarian reasons:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Refugee status:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Rejected:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:Subsidiary protection:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[Action (Countries Moving To1)]'>
+            <groupfilter function='level-members' level='[Countries Moving To]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]</column>
+            <column>[federated.0j64svy1lnbo2z1aclvpn0393czm].[Action (Countries Moving To1)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Longitude:qk]' field-type='quantitative' max='14806099.480537105' min='-7078464.9870738294' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Latitute:qk]' field-type='quantitative' max='13071419.019282993' min='2375955.1817287747' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0j64svy1lnbo2z1aclvpn0393czm].[sum:First instance decisions:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='true' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='true' />
+            <format attr='enabled' id='light_adm0_lbl' value='true' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='true' />
+            <format attr='enabled' id='light_pp2_statelabels' value='true' />
+            <format attr='enabled' id='pp2_adminlabels' value='true' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='true' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[Multiple Values]' />
+              <color column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' />
+              <lod column='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries#:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Latitute:qk]</rows>
+        <cols>[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{1F5A5EED-6918-496B-8599-90B16F7F00FF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='80562' id='3' name='Sheet 4' w='44389' x='1122' y='611' />
+        <zone h='16259' id='4' name='Sheet 4' pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' type='color' w='12905' x='935' y='81785' />
+        <zone h='16259' id='5' name='Sheet 4' pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[Multiple Values]' type='size' w='8728' x='20200' y='81540' />
+        <zone h='81174' id='6' name='Sheet 3' w='51746' x='47319' y='489' />
+        <zone h='7090' id='7' name='Sheet 3' pane-specification-id='3' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' type='color' w='14963' x='63840' y='92176' />
+        <zone h='6601' id='8' name='Sheet 3' pane-specification-id='2' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' type='color' w='14776' x='63840' y='84108' />
+        <zone h='7457' id='9' name='Sheet 3' pane-specification-id='1' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' type='color' w='14526' x='80611' y='84230' />
+        <zone h='8313' id='10' name='Sheet 3' pane-specification-id='4' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' type='color' w='14963' x='80362' y='91443' />
+        <zone h='9780' id='11' name='Sheet 3' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' type='highlighter' w='15337' x='47132' y='83863' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='17' param='vert' type='layout-flow' w='99002' x='499' y='978'>
+                <zone h='9780' id='11' name='Sheet 3' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' type='highlighter' w='15337' x='47132' y='83863'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81174' id='6' is-fixed='true' name='Sheet 3' w='51746' x='47319' y='489'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7090' id='7' name='Sheet 3' pane-specification-id='3' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' type='color' w='14963' x='63840' y='92176'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6601' id='8' name='Sheet 3' pane-specification-id='2' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' type='color' w='14776' x='63840' y='84108'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7457' id='9' name='Sheet 3' pane-specification-id='1' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' type='color' w='14526' x='80611' y='84230'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8313' id='10' name='Sheet 3' pane-specification-id='4' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' type='color' w='14963' x='80362' y='91443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80562' id='3' is-fixed='true' name='Sheet 4' w='44389' x='1122' y='611'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16259' id='4' name='Sheet 4' pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' type='color' w='12905' x='935' y='81785'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16259' id='5' name='Sheet 4' pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[Multiple Values]' type='size' w='8728' x='20200' y='81540'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E5D3A772-3282-46B8-8C8A-74B200355246}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2017:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Asylum Seekers Taken-2018:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{946B6CC8-E4DD-4E81-AB08-3E1CFDCBDEB4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{758F9DB8-8004-4E26-920C-B02AF9249DB9}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Subsidiary protection:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Refugee status:qk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Humanitarian reasons:qk]' type='color' />
+            <card pane-specification-id='4' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[pcto:sum:Rejected:qk]' type='color' />
+            <card param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries Moving To:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{E303A210-BB71-466B-B346-1F382D57F788}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='196'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[Multiple Values]' type='size' />
+            <card param='[federated.0j64svy1lnbo2z1aclvpn0393czm].[none:Countries#:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11626814-0106-4471-AC03-1D5E8B74D0AB}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 3'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E8AA66E1-4FC5-41B1-AE9C-9006E1C22110}' />
+    </window>
+  </windows>
+</workbook>
