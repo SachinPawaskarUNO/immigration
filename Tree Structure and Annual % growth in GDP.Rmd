@@ -1,0 +1,41 @@
+---
+title: "Immigration"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Tree Structure explaining different factors of Economy 
+```{r}
+
+library(networkD3)
+
+t <- list(name = "Economy", children = list(list(name = "Economic Factors", children = list(list(name = "Natural Resources"),
+                                                                                            list(name = "Human Capital",children = list(list(name = "Labour Force", children = list(list(name = "Native Workers"),
+                                                                                                                                                                                    list(name = "FOREIGN WORKERS(IMMIGRANTS)"))),
+                                                                                                                                        
+                                                                                                                                        list(name = "Productivity"))),
+                                                                                            
+                                                                                            list(name = "Investment"),
+                                                                                            list(name = "Entrepreneur"))),
+                                            list(name = "Non-Economic Factors", children = list(list(name = "Social"),
+                                                                                                list(name = "Political"),
+                                                                                                list(name = "Demographic")))))
+diagonalNetwork(List = t, fontSize = 10)
+```
+
+##USA gdp growth rate Annual percentage
+
+```{r}
+library(dplyr)
+library(dygraphs)
+
+gdp=read.csv("gdp-growth-rate.csv")
+dygraph(gdp,main="GDP growth (annual %)",xlab = "Year",ylab = "Annual %")%>% dyRangeSelector
+
+```
+
