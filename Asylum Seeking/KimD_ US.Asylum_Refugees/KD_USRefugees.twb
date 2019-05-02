@@ -26,6 +26,7 @@
             <column datatype='integer' name='Amount of Refugees ' ordinal='3' />
           </columns>
         </relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -104,6 +105,70 @@
       </column>
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
       <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/immigration/US_ArrivalRefugees.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/26/2019 10:12:12 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='US_ArrivalRefugees' increment-value='%null%' refresh-type='create' rows-inserted='1738' timestamp-start='2019-04-26 22:12:12.640' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Destination Country </remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Destination Country ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Destination Country </remote-alias>
+              <ordinal>0</ordinal>
+              <family>US_ArrivalRefugees.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>US_ArrivalRefugees.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>US_ArrivalRefugees.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount of Refugees </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Amount of Refugees ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount of Refugees </remote-alias>
+              <ordinal>3</ordinal>
+              <family>US_ArrivalRefugees.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>583</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' dim-percentage='0.482143' measure-ordering='alphabetic' measure-percentage='0.517857' show-structure='true' />
       <style>
         <style-rule element='mark'>
